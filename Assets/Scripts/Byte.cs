@@ -25,8 +25,32 @@ public class Byte : MonoBehaviour
         if (bits[7].state) { value += 128; }
     }
 
-    public void setValue(int myValue)
+    public void setValue(int newValue)
     {
 
+        // 255
+        if (newValue > 255)
+        {
+            newValue = 255;
+        };
+
+        int countValue = 256;
+
+        value = newValue;
+
+        for (int i = 7; i >= 0; i--)
+        {
+            countValue /= 2;
+
+            if (newValue >= countValue)
+            {
+                bits[i].state = true;
+                newValue -= countValue;
+            }
+            else
+            {
+                bits[i].state = false;
+            }
+        }
     }
 }
