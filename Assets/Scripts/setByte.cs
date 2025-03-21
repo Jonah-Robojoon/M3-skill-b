@@ -15,8 +15,8 @@ public class setByte : MonoBehaviour
         myByte.setValue(newValue);
     }
 
-    public void SetValue(int newValue)
+    public void SetValue(int mapNewValue)
     {
-
+        newValue = mapNewValue;
     }
 }

@@ -8,9 +8,6 @@ public class Bit : MonoBehaviour
     //public GameObject text;
     SpriteRenderer spriteRenderer;
 
-    //public string TrueText;
-    //public string FalseText;
-
     [SerializeField] TextMeshProUGUI MyText_text;
 
     // Start is called before the first frame update
