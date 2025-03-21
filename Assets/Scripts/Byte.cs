@@ -53,4 +53,9 @@ public class Byte : MonoBehaviour
             }
         }
     }
+    public string getHex()
+    {
+        string hex = value.ToString("X2");
+        return hex;
+    }
 }

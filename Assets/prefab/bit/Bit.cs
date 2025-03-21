@@ -28,13 +28,11 @@ public class Bit : MonoBehaviour
         {
             // Zet de sprite kleur op groen als state true is
             spriteRenderer.color = Color.green;
-            MyText_text.text = "1";
         }
         else
         {
             // Zet de sprite kleur op rood als state false is
             spriteRenderer.color = Color.red;
-            MyText_text.text = "0";
         }
 
     }
